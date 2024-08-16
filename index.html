@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Decodificador de Texto</h1>
+        <h4>(Desenvolvido por: José López)</h4>
+        <h2>Use apenas letras minúsculas sem acentos nem caracteres especiais.</h2>
+        <textarea id="input" placeholder="Digite seu texto aqui" oninput="removeSpecialChars()"></textarea>
+        <div class="buttons">
+            <button onclick="criptografar()">Criptografar</button>
+            <button onclick="descriptografar()">Descriptografar</button>
+        </div>
+        <textarea id="output" placeholder="Nenhuma mensagem encontrada" readonly></textarea>
+        <button onclick="copiar()">Copiar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
